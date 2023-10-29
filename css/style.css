@@ -365,7 +365,7 @@ width: 100%;
 .portfolio-title-item{
 width: calc((100% - 48px) / 3);
 position: relative;
-
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-container{
@@ -394,7 +394,6 @@ border-top: none;
 .overlay-wraper{
     position: relative;
     overflow: hidden;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .overlay-portfolio{
     position: absolute;
@@ -411,7 +410,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 padding: 40px 32px;
 overflow: auto;
 transform:translateY(100%);
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-title-item:hover .overlay-portfolio{
     transform: translateY(0%);
