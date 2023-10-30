@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #FFFFFF;
-    max-width: 1440px;
+   
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -51,6 +51,7 @@ border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
+
 .page-navigation{
     display: flex;
     align-items: center;
@@ -86,13 +87,17 @@ gap: 40px;
     }
 
 .menu-link{
-    position: relative;
-    color: #404bbf;
+    display: block;
+    color: #2E2F42;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-link::after{
-    display: block;
+.menu-active {
+    position: relative;
+    color: #404BBF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-active::after{
     content:'' ;
     width: 100%;
     height: 4px;
@@ -133,7 +138,6 @@ gap: 40px;
 
 /* ===== H E R O ======*/
 .hero{
-    max-width: 1440px;
     background: #2E2F42;
     padding-top: 188px;
      padding-bottom: 188px;
@@ -236,8 +240,7 @@ width: calc((100%-72px)/4);
     border-radius: 4px;
     margin-bottom: 8px;
     border: 1px solid #8E8F99;
-    padding-top: 24px;
-        padding-bottom: 24px;
+   
 }
 
 /* ====== /SECTION 2 ===== */
@@ -300,17 +303,7 @@ gap: 24px;
     margin-left: auto;
     }
 
-.social-list-link{
-    display: flex;
-    line-height: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #4D5AE5;border-radius: 50%;
-    padding: 12px;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .social-list-list{
     display: flex;
     justify-content: center;
@@ -326,10 +319,20 @@ gap: 24px;
       fill: #F4F4FD;  
     }
 
-.social-list-item{
-background-color: #4D5AE5;
+.social-list-item {
+    width: 40px;
+    height: 40px;
+}
+.social-list-link {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
     border-radius: 50%;
-
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
