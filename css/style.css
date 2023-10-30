@@ -138,6 +138,7 @@ gap: 40px;
 
 /* ===== H E R O ======*/
 .hero{
+    max-width: 1440px;
     background: #2E2F42;
     padding-top: 188px;
      padding-bottom: 188px;
@@ -145,7 +146,7 @@ gap: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    }
+}
 
 .hero-title{
     display: block;
