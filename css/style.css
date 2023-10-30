@@ -309,7 +309,7 @@ gap: 24px;
     padding: 12px;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .social-list-list{
     display: flex;
@@ -329,6 +329,7 @@ gap: 24px;
 .social-list-item{
 background-color: #4D5AE5;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
